@@ -1,0 +1,70 @@
+@charset "UTF-8";
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.cf::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+body {
+    font: 14px 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, Osaka, 'MS PGothic', arial, helvetica, sans-serif;
+}
+
+.section {
+    padding: 50px;
+}
+
+.section_title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* アコーディオン CSS */
+
+.slide_panel {
+    width: 600px;
+}
+
+.panel_name {
+    padding: 15px;
+    font-size: 18px;
+    background: black;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.panel_name::after {
+    content: '\f055';
+    font-family: 'FontAwesome';
+    float: right;
+}
+
+.close::after {
+    content: '\f056';
+    font-family: 'FontAwesome';
+    float: right;
+}
+
+.panel_detail {
+    padding: 15px;
+    background: orange;
+    font-size: 20px;
+    margin: 0;
+    color: black;
+    display: none;
+    text-align: center;
+}
